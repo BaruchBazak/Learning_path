@@ -16,3 +16,4 @@ dict_names.update({"Yoel": total_amount})
 print(dict_names)
 print("The number entries : {}".format(len(dict_names)))
 print("Idan" in dict_names)
+
