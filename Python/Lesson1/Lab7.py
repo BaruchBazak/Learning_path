@@ -38,4 +38,6 @@ for i in range(1, turns + 1):
         Customer_balance += 20
         print("You win 20 shekels in this round\n")
 
-print("You balance : {0}".format(Customer_balance))
+print("Calculating you prize...")
+time.sleep(3)
+print("You prize : {0}".format(Customer_balance))
