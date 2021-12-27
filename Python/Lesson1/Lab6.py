@@ -14,7 +14,7 @@ elif choice == "3":
     dns_dict.update({input("Enter a URL : "): input("Enter IP : ")})
     dns_dict.update({input("Enter a URL : "): input("Enter IP : ")})
     dns_dict.update({input("Enter a URL : "): input("Enter IP : ")})
-    print("The new DNS dict is\n----------------", str(dns_dict))
+    print("The new DNS dict is\n----------------\n", str(dns_dict))
 elif choice == "4":
     word = input("Enter a word : ")
     if word == word[::-1]:
