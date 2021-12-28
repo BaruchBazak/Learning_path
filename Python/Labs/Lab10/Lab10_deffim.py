@@ -1,4 +1,4 @@
-from Python.Labs.Lab10.urls import dns_dict
+dns_dict = {"My site": "10.10.10.10", "Local": "127.0.0.1", "Main site": "192.168.0.1"}
 
 
 def menu():
@@ -106,18 +106,32 @@ def search_url():
 def add_url():
     url = input("Enter new URL : ")
     ip = input("Enter ip address for {0} : ".format(url))
-    dns_dict[url] = ip
+    dns_dict.update({url: ip})
     print("Url: {0} with ip : {1} add to dns_dict".format(url, ip))
 
 
 def delete_url():
-    return
+    url = input("Enter URL you are want to delete : ")
+    if url in dns_dict:
+        dns_dict.pop(url)
+    else:
+        print("Not found {0} .. ".format(url))
 
 
 def update_url():
-
-    return
+    print(dns_dict)
+    url = input("Enter URL you are want to update : ")
+    if url in dns_dict.keys():
+        ip = input("Enter new IP for {0} : ".format(url))
+        dns_dict[url] = ip
+        print(dns_dict)
+    else:
+        print("{0} not found ..".format(url))
 
 
 def print_all_urls():
-    return
+    for url in dns_dict.keys():
+        print("URL --> {0} --> IP --> {1}".format(url, dns_dict[url]))
+
+
+

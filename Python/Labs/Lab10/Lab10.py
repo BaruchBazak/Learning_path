@@ -18,6 +18,7 @@ b
 4. Update the IP address of specific URL
 5. Print all URL:IP address
 """
-from Python.Labs.Lab10.Lab10_deffim import *
 
+from Python.Labs.Lab10.Lab10_deffim import *
+from Python.Labs.Lab10.urls import dns_dict
 menu()
