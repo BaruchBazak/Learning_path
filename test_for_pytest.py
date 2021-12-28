@@ -1,5 +1,5 @@
 def test_uppercase():
-    assert "loud noises".upper() == "LOUD NOISES"
+    assert "loud noises".upper() == "LOUD NOISds"
 
     
 def test_reversed():
